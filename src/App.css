@@ -2,26 +2,26 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 body {
   background: linear-gradient(
     90deg,
-    rgba(48, 16, 255, 1) 0%,
-    rgb(18, 29, 126) 100%
+    rgb(233, 34, 34) 0%,
+    rgb(49, 1, 45) 100%
   );
 }
-.todo-app {
+.tvshow-app {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 520px;
+  max-width: 90vw;
   min-height: 600px;
   background: #161a2b;
   text-align: center;
-  margin: 128px auto;
+  margin: 100px auto;
   border-radius: 10px;
   padding-bottom: 32px;
 }
@@ -32,16 +32,21 @@ h1 {
   font-size: 24px;
 }
 
-.complete {
-  text-decoration: line-through;
-  opacity: 0.4;
+.button-add {
+  padding: 20px;
+  margin: 0px auto;
+  background-color: rgb(132, 208, 18);
+  border: none;
+  border-radius: 10%;
+  font-weight: bolder;
 }
 
-.todo-form {
+.tvshow-form {
+  padding: 40px;
   margin-bottom: 32px;
 }
 
-.todo-input {
+.tvshow-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
   border: 2px solid #5d0cff;
@@ -51,11 +56,11 @@ h1 {
   color: #fff;
 }
 
-.todo-input::placeholder {
+.tvshow-input::placeholder {
   color: #e2e2e2;
 }
 
-.todo-button {
+.tvshow-button {
   padding: 16px;
   border: none;
   border-radius: 0 4px 4px 0;
@@ -70,11 +75,11 @@ h1 {
   text-transform: capitalize;
 }
 
-.todo-input.edit {
+.tvshow-input.edit {
   border: 2px solid #149fff;
 }
 
-.todo-button.edit {
+.tvshow-button.edit {
   background: linear-gradient(
     90deg,
     rgba(20, 159, 255, 1) 0%,
@@ -83,17 +88,17 @@ h1 {
   padding: 16px 22px;
 }
 
-.todo-container {
+.tvshow-container {
   display: flex;
   flex-direction: row;
   position: relative;
 }
 
-.todo-text:hover {
+.tvshow-text:hover {
   cursor: pointer;
 }
 
-.todo-row {
+.tvshow-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,7 +115,7 @@ h1 {
   width: 90%;
 }
 
-.todo-row:nth-child(4n + 1) {
+.tvshow-row:nth-child(4n + 1) {
   background: linear-gradient(
     90deg,
     rgba(93, 12, 255, 1) 0%,
@@ -118,7 +123,7 @@ h1 {
   );
 }
 
-.todo-row:nth-child(4n + 2) {
+.tvshow-row:nth-child(4n + 2) {
   background: linear-gradient(
     90deg,
     rgba(255, 12, 241, 1) 0%,
@@ -126,7 +131,7 @@ h1 {
   );
 }
 
-.todo-row:nth-child(4n + 3) {
+.tvshow-row:nth-child(4n + 3) {
   background: linear-gradient(
     90deg,
     rgba(20, 159, 255, 1) 0%,

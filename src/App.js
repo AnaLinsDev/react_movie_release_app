@@ -1,11 +1,11 @@
 import './App.css';
-import Todo from './components/Todo'
+import Screen from './components/Movies/Screen'
 
 //Main application
 function App() {
   return (
-    <div className="todo-app">
-      <Todo/>
+    <div className="tvshow-app">
+      <Screen/>
     </div>
   );
 }
