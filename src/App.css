@@ -34,7 +34,7 @@ h1 {
 
 .button-add {
   padding: 20px;
-  margin: 0px auto;
+  margin: 10px auto;
   background-color: rgb(132, 208, 18);
   border: none;
   border-radius: 10%;
@@ -51,13 +51,23 @@ h1 {
   border-radius: 4px 0 0 4px;
   border: 2px solid #5d0cff;
   outline: none;
-  width: 320px;
+  max-width: 320px;
   background: transparent;
   color: #fff;
+  margin: 10px;
 }
 
 .tvshow-input::placeholder {
   color: #e2e2e2;
+}
+
+.error-message {
+  color: rgb(113, 5, 5);
+  background-color: rgba(249, 249, 249, 0.628);
+  padding: 10px;
+  max-width: 300px;
+  margin: 0px auto;
+  font-weight: bolder;
 }
 
 .tvshow-button {
@@ -66,6 +76,7 @@ h1 {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
+  margin: 30px;  
   background: linear-gradient(
     90deg,
     rgba(93, 12, 255, 1) 0%,

@@ -10,7 +10,7 @@ const List = ({ tvShows, removeTvShows, updateTvShows }) => {
       key={index}
     >
       <div key={tvshow.id} className='tvshow-text'>
-        {tvshow.value}
+        {tvshow.value.title}
       </div>
       <div className='icons'>
         <RiCloseCircleLine

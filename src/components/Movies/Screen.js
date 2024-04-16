@@ -11,7 +11,7 @@ function Screen({ addScreen, editScreen, listScreen }) {
 
   const [editParams, setEditParams] = useState({
     id: null,
-    value: ''
+    value: "",
   });
 
   const [screen, setScreen] = useState(3);
@@ -25,27 +25,29 @@ function Screen({ addScreen, editScreen, listScreen }) {
   };
 
   const setScreenEdit = (tvshow) => {
-    setEditParams({ id: tvshow.id, value: tvshow.value })
+    setEditParams({ id: tvshow.id, value: tvshow.value });
 
     setScreen(screens.edit);
   };
 
+  const setScreenList = () => {
+    setScreen(screens.list);
+  };
+
   // _________________________________
 
- const addMovie = movie => {
+  const addMovie = (movie) => {
     const newList = [movie, ...tvShows];
 
     setTvShows(newList);
-    console.log(...tvShows);
 
     setScreen(screens.list);
   };
 
   const updateMovie = (updatedMovie) => {
-    console.log(...tvShows);
-    console.log(updatedMovie);
-
-    setTvShows(prev => prev.map(item => (item.id === updatedMovie.id ? updatedMovie : item)));
+    setTvShows((prev) =>
+      prev.map((item) => (item.id === updatedMovie.id ? updatedMovie : item))
+    );
 
     setScreen(screens.list);
   };
@@ -59,11 +61,21 @@ function Screen({ addScreen, editScreen, listScreen }) {
   };
 
   if (screen === screens.edit) {
-    return (<> <Form onSubmit={updateMovie} edit={editParams}/> </>)
+    return (
+      <>
+        {" "}
+        <Form onSubmit={updateMovie} edit={editParams} Cancel={setScreenList} />{" "}
+      </>
+    );
   }
 
   if (screen === screens.add) {
-    return (<> <Form onSubmit={addMovie}/> </>)
+    return (
+      <>
+        {" "}
+        <Form onSubmit={addMovie} Cancel={setScreenList} />{" "}
+      </>
+    );
   }
 
   return (
@@ -78,7 +90,6 @@ function Screen({ addScreen, editScreen, listScreen }) {
         removeTvShows={removeTvshow}
         updateTvShows={setScreenEdit}
       />
-
     </>
   );
 }
