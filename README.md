@@ -1,8 +1,6 @@
 # TVShow List
 
-This project was developed using [this tutorial video](https://www.youtube.com/watch?v=E1E08i2UJGI) to relearn the fundamental steps of a React project. 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was developed to relearn the fundamental steps of a React project. 
 
 ### Steps:
 - Clone the repository
@@ -11,4 +9,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Image:
 
+![image](https://github.com/AnaLinsDev/react_movie_release_app/assets/60307596/8df34876-97c5-408e-ad51-ae082c2b0f7e)
 
+![image](https://github.com/AnaLinsDev/react_movie_release_app/assets/60307596/6d44c702-eb32-4672-9dbf-e0fddde73147)
