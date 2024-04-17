@@ -82,7 +82,7 @@ function Screen({ addScreen, editScreen, listScreen }) {
     <>
       <h1>My top expected shows:</h1>
       <button onClick={setScreenAdd} className="button-add">
-        Add
+        Add Show
       </button>
 
       <List
